@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Poppins&display=swap");
+
+:root {
+  --red: #f05454;
+  --blue: #30475e;
+  --black: #222831;
+  --clear: #dddddd;
+  --padding: 40px;
+  --heading: "Bangers", cursive;
+  --body: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--clear);
+  color: var(--clear);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  font-family: var(--body);
+}
+
+.main-container {
+  box-sizing: border-box;
+  background-color: var(--black);
+  text-align: center;
+  width: 90%;
+  max-width: 455px;
+  margin: 0 auto;
+  padding: var(--padding);
+  border-radius: 40px;
+  box-shadow: 0px 0px 50px 2px rgba(0, 0, 0, 0.75);
+  border: 10px groove var(--red);
+  text-decoration-color: red;
+}
+
+.items-list {
+  text-align: left;
+}
+
+.input-text {
+  background-color: var(--black);
+  color: var(--clear);
+  border: none;
+  padding: 15px 0 0 10px;
+  border-bottom: var(--red) 2px solid;
+  font-size: 20px;
+}
+
+::placeholder {
+  color: var(--red);
+  font-size: 20px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+.input-button {
+  margin-top: 10px;
+  padding: 5px 30px;
+  background-color: var(--black);
+  border: var(--red) 1px solid;
+  color: var(--red);
+  transition: 0.3s;
+}
+
+.input-button:hover {
+  background-color: var(--red);
+  border: var(--red) 1px solid;
+  color: var(--black);
+  transition: 0.3s;
+}
+
+h1 {
+  margin: 0;
+  color: var(--red);
+  font-family: var(--heading);
+  font-size: 60px;
+}
+
+li {
+  font-family: var(--heading);
+  font-size: 30px;
+  text-decoration-color: red;
+}
+
+li::marker {
+  color: var(--red);
+}
